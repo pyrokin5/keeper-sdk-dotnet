@@ -63,7 +63,7 @@ namespace KeeperSecurity.Vault
         public bool? ManageRecords { get; set; }
     }
 
-    internal static class VaultOnlineFunctions
+    public static class VaultOnlineFunctions
     {
         public static async Task<KeeperRecord> AddRecordToFolder(this VaultOnline vault, KeeperRecord record,
             string folderUid = null)
